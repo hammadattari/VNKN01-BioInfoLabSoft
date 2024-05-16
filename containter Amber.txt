@@ -1,0 +1,105 @@
+After installing ubuntu Server Minimal 
+apt install ssh
+nano  /etc/ssh/sshd_config
+PermitRootLogin yes
+service ssh restart
+==========================
+sudo apt update
+sudo apt install docker.io -y
+sudo systemctl enable
+sudo systemctl status
+
+-----------------------------
+Run the ubuntu Docker and enter into container then All fallowing commands execute in container
+docker run -it ubuntu bash
+apt update &&  apt upgrade
+cat /etc/lsb-release (check ubuntu version)
+===============================
+*****************************************************************
+
+apt install cmake -y
+apt -y update
+apt -y install tcsh make
+apt install gcc
+apt -y install gcc gfortran
+apt -y install flex bison patch
+apt -y install bc xorg-dev libbz2-dev wget
+apt-get install gcc build-essential -y
+ apt-get install -y build-essential
+==================================================
+Verification:
+
+Once the installation is complete, you can verify that the tools are installed by running their respective version commands:
+
+cmake --version
+tcsh --version (if installed)
+make --version
+gcc --version
+g++ --version
+flex --version
+bison --version
+patch --version
+bc
+xorg-dev --version (may not output anything)
+libbz2-dev --version (may not output anything)
+wget --version
+
+==============
+cd /opt
+mkdir amber
+cd amber/
+=======================
+see Copy file from docker host to container "ecstatic_brahmagupta"
+
+-----------------------
+docker cp "/mnt/AmberTools23.tar.bz2" "vigorous_murdock":/opt/amber
+docker cp "/mnt/Amber22.tar.bz2" "vigorous_murdock":/opt/amber
+
+==========================================
+Extract the AmberTools23.tar.bz2 and Amber22.tar.bz2 files
+tar xvjf  AmberTools23.tar.bz2
+tar xvfj Amber22.tar.bz2
+===========================================
+Compile and install AMBER
+cd  /opt/amber/amber22_src/build
+ls and find run_cmake
+./run_cmake
+=========================================
+make install
+   source /opt/amber/amber22/amber.sh
+=============================
+Insert the AMBER path into your .bashrc file
+-----------------------------
+echo '#AMBER' >> ~/.bashrc
+echo 'source /opt/amber/amber22/amber.sh'    >>     ~/.bashrc
+========================================================
+Parallelization of AMBER
+To run the AMBER program on more than one CPU core, execute the following commands.
+-------------------------------------------------------------
+apt -y install openmpi-bin libopenmpi-dev openssh-client
+cd /opt/amber/amber22_src/AmberTools/src
+wget www.mpich.org/static/downloads/3.3.2/mpich-3.3.2.tar.gz
+tar vxzf mpich-3.3.2.tar.gz
+./configure_mpich gnu
+cd ../../build
+=============================
+Update all necessary packages
+-----------------------------------------
+
+apt -y update
+apt -y install tcsh make \
+               gcc gfortran \
+               flex bison patch bc wget \
+               xorg-dev libz-dev libbz2-dev
+
+==================================
+After Installation run tleap
+===================================
+
+docker container commit --author "Syed Hammad Ahmed VU Nankana Shaib Campus" --message "This Amber24 suite contain Amber and Amber Tool with tleap tested" fd29d39cdd72 homi/ambersuit24:v1.0
+========================
+root@micostack:~# sudo du -ah /var | sort -hr | head -20
+root@micostack:~# du -h --max-depth=1 / | sort -hr
+
+docker commit
+docker start fd29d39cdd72
