@@ -56,7 +56,7 @@ ssh localhost
 # Please remember the following Steps: "Second, run the Amber Suite Container." 
 
 ## Step 1 - Install WinSCP to transfer files to a Linux container from the Windows 10 host
-**Note:** Put the username and password with their IP address of Ubuntu installed on wsl2.
+**Note:** To Connect the WinSCP, put the username and password with the IP address of Ubuntu installed on wsl2.
 
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/baffe477-b5e7-412d-8776-39004983924e)
 
