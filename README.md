@@ -53,3 +53,54 @@ ssh localhost
 ![chroopwd](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/27d7b6f4-501d-48dd-97d3-9a75955b3fad)
 
 
+# Please remember the following Steps: "Second, run the Amber Suite Container." 
+
+## Step 1 - Install WinSCP to transfer files to a Linux container from the Windows 10 host
+**Note:** Put the username and password with their IP address of Ubuntu installed on wsl2.
+
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/baffe477-b5e7-412d-8776-39004983924e)
+
+
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/3470f020-ba1f-4300-9f79-26ceb3f007f0)
+
+
+
+## Step 2 - docker installation on Windows Subsystem for Linux
+```bash
+	sudo apt update
+	sudo apt install docker.io
+```
+
+## Step 3 - docker images so load Amber22 docker image
+```bash
+	sudo docker images
+	sudo docker load < /home/hammad/amber22_hammad_vnkn01.tar.gz
+```
+
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/ff7a489e-14d6-49cf-a255-e1323a780612)
+
+
+**Note:** After loading images  we have the image amber22_hammad_vnkn01
+
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/c23eb973-2be2-4e90-982b-94bf598f2279)
+
+## Step 4 - Run container with image id.
+```bash
+docker run -it d943cd2be591
+```
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/0a1dcbaa-deba-4f09-92a3-9cbe5bb0a0a2)
+
+## Step 5 - successfully bio tleap run
+
+Test amber is running type   ``` tleap ```
+
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/8f2268a2-2471-4073-b261-661890eb65a7)
+
+
+
+## Step 6 - Crtl+c to exit the container and start the exited container
+
+```bash
+ docker ps -a 
+ docker container  start -i a743fc47f9bb
+```
