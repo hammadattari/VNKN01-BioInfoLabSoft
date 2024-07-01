@@ -1,5 +1,5 @@
 # Stpe by Step Guide for Amber is a suite installation(biomolecular simulation programs) 
-### Amber is distributed in two parts: AmberTools22 and Amber23. Both these software are Dockerized and put into a container which you can use with the help of this manual.
+### Amber Suite = AmberTools22 + Amber23. Both these software are Dockerized and put into a container which you can use with the help of this manual.
 ## Note: First, we install WSL2. Secondly, we install the Amber suite.
 This guide outlines the steps to set up a Linux environment using Windows Subsystem for Linux (WSL). WSL allows you to run Linux distributions directly on your Windows machine.
 
