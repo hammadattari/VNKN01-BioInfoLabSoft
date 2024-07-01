@@ -75,6 +75,7 @@ ssh localhost
 ```bash
 	sudo docker images
 	sudo docker load < /home/hammad/amber22_hammad_vnkn01.tar.gz
+	 or docker load -i F:\DevOps\Amber24\amber22_hammad_vnkn01.tar.gz (windows docker Desktop)
 ```
 
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/ff7a489e-14d6-49cf-a255-e1323a780612)
