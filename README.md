@@ -69,6 +69,7 @@ ssh localhost
 ```
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/b878f515-36b4-4adf-af85-00eae225c5de)
 
+## Step 3 - I already have the docker image in my local system, So load Amber22 images  to docker.  
 
 **Note:** To Connect the WinSCP, put the username and password with the IP address of Ubuntu installed on wsl2.
 
@@ -78,7 +79,7 @@ ssh localhost
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/3470f020-ba1f-4300-9f79-26ceb3f007f0)
 
 
-## Step 3 - docker images so load Amber22 docker image
+
 ```bash
 	sudo docker images
 	sudo docker load < /home/hammad/amber22_hammad_vnkn01.tar.gz
