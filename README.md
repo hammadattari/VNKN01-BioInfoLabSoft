@@ -54,10 +54,11 @@ ssh localhost
 
 
 # Please remember the following Steps: "Second, run the Amber Suite Container." 
-## Step 1 - docker installation on Windows Subsystem for Linux.
+## Step 1 - docker installation on Windows Subsystem for Linux and verify  docker installation.
 ```bash
 	sudo apt update
 	sudo apt install docker.io
+	sudo docker --version
 ```
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/0301cbba-efc8-4366-bfca-a0cc679e1ef3)
 
