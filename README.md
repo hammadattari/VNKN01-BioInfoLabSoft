@@ -54,13 +54,21 @@ ssh localhost
 
 
 # Please remember the following Steps: "Second, run the Amber Suite Container." 
-## Step 1 - docker installation on Windows Subsystem for Linux and pull the amber image.
+## Step 1 - docker installation on Windows Subsystem for Linux.
 ```bash
 	sudo apt update
 	sudo apt install docker.io
-	docker pull homiahmed/bio_amber
 ```
-## Step 2 - Install WinSCP to transfer files to a Linux container from the Windows 10 host
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/0301cbba-efc8-4366-bfca-a0cc679e1ef3)
+
+## Step 2 - Pull the amber image and list the docker images
+```bash
+	docker pull homiahmed/bio_amber
+	docker image ls
+```
+![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/b878f515-36b4-4adf-af85-00eae225c5de)
+
+
 **Note:** To Connect the WinSCP, put the username and password with the IP address of Ubuntu installed on wsl2.
 
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/baffe477-b5e7-412d-8776-39004983924e)
