@@ -37,7 +37,7 @@ wsl.exe --install Ubuntu-24.04
 ## Step 4 - Install and Enable SSH
 
 ```bash
-apt install
+apt install ssh
 nano /etc/ssh/sshd_config
 sudo systemctl restart ssh or sudo service sshd restart
 ```
@@ -54,8 +54,13 @@ ssh localhost
 
 
 # Please remember the following Steps: "Second, run the Amber Suite Container." 
-
-## Step 1 - Install WinSCP to transfer files to a Linux container from the Windows 10 host
+## Step 1 - docker installation on Windows Subsystem for Linux and pull the amber image.
+```bash
+	sudo apt update
+	sudo apt install docker.io
+	docker pull homiahmed/bio_amber
+```
+## Step 2 - Install WinSCP to transfer files to a Linux container from the Windows 10 host
 **Note:** To Connect the WinSCP, put the username and password with the IP address of Ubuntu installed on wsl2.
 
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/baffe477-b5e7-412d-8776-39004983924e)
@@ -63,13 +68,6 @@ ssh localhost
 
 ![image](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/3470f020-ba1f-4300-9f79-26ceb3f007f0)
 
-
-
-## Step 2 - docker installation on Windows Subsystem for Linux
-```bash
-	sudo apt update
-	sudo apt install docker.io
-```
 
 ## Step 3 - docker images so load Amber22 docker image
 ```bash
