@@ -1,6 +1,7 @@
-# Stpe by Step Guide for Amber is a suite installation(biomolecular simulation programs) 
-### Amber Suite = AmberTools22 + Amber23. Both these software are Dockerized and put into a container which you can use with the help of this manual.You can download it https://hub.docker.com/r/homiahmed/bio_amber
-## Note: First, we install WSL2. Secondly, we install the Amber suite.
+
+# Amber Suite Installation Step-by-Step Guide (biomolecular simulation programs)
+### The Amber Suite consists of AmberTools22 and Amber23. Both software programs are Dockerized and assembled into a container, which you can use by following this manual. To download, visit https://hub.docker.com/r/homiahmed/bio_amber.
+## Note: In the First Phase, we install WSL2. In the second Phase, we install the Amber suite.
 This guide outlines the steps to set up a Linux environment using Windows Subsystem for Linux (WSL). WSL allows you to run Linux distributions directly on your Windows machine.
 
 **Prerequisites:**
@@ -8,7 +9,7 @@ This guide outlines the steps to set up a Linux environment using Windows Subsys
 * A Windows 10 (version 1903 or later) or Windows 11 machine
 * Administrator privileges
 
-
+ # First Phase Steps ***-WSL Installation***
 ## Step 1: Enable Windows Subsystem for Linux (WSL)
 
 Open a PowerShell window as Administrator and run the following command:
@@ -52,8 +53,7 @@ ssh localhost
 ```
 ![chroopwd](https://github.com/hammadattari/VNKN01-BioInfoLabSoft/assets/44769452/27d7b6f4-501d-48dd-97d3-9a75955b3fad)
 
-
-# Please remember the following Steps: "Second, run the Amber Suite Container." 
+# Second Phase Steps ***-Amber Suite Container Deployment***
 ## Step 1 - docker installation on Windows Subsystem for Linux and verify  docker installation.
 ```bash
 	sudo apt update
